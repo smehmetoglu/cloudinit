@@ -1,0 +1,10 @@
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    passwd: $6$NUysCIVZ7/BHgV/0$UceE9QzYnGGsK5v1b6KacN5PxK79ixmiYA9SnkUrWNQX7EP6N6ck61OtJjvInq4TyI99shYgkOnG4FihUSvMO0 # Password01
+packages:
+  - nano
+  - python3-pip
+ntp:
+  pools: ['tr.pool.ntp.org']
