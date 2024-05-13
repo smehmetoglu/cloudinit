@@ -1,0 +1,6 @@
+#cloud-config
+rancher:
+  network:
+    dns:
+      nameservers:
+        - 10.10.110.51
